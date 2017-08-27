@@ -8,11 +8,15 @@ with open('words', encoding="utf-8") as f:
             continue
 
         if len(line) == 5:
+            nbrs = my_neb(line)
             L[line] = []   
-            #L1 = [line, []]
-        # if line[::-1] == line:
-        #     print(line)
-
+            
 print(L)
+
+for k1 in words:
+    for k2 in words:
+        if neighbors(k1, k2):
+            words[k1].append(k2)
+
 
 print(len(L))

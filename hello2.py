@@ -79,3 +79,8 @@ int("3034",16)
 #Align
 "{:>30}{:^30}".format(12345, 5050)
 
+# Dictionary from List
+{x:x**2 for x in [1,2,3]}
+#Generator object - which can be used in list
+(x:x**2 for x in [1,2,3])
+list(x:x**2 for x in [1,2,3])
