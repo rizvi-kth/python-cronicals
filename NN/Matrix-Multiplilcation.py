@@ -1,6 +1,14 @@
 
 # coding: utf-8
 
+# In[33]:
+
+
+#Sigmoid Function
+def sigmoid (x):
+    return 1/(1 + np.exp(-x))
+
+
 # In[28]:
 
 
@@ -36,8 +44,27 @@ Z=np.dot(X,wh) + bh
 Z
 
 
-# In[ ]:
+# In[43]:
 
 
+Act = sigmoid(Z)
+Act
+#Act.shape
 
+
+# In[41]:
+
+
+wh_1_2 = np.array([[ 0.3,  0.25,  0.23]]).T
+wh_1_2
+#wh_1_2.shape
+
+
+# In[46]:
+
+
+bh_1_2 = 0.69
+Output_layer_input = np.dot( Act, wh_1_2) + bh_1_2
+Output = sigmoid(Output_layer_input)
+Output
 
