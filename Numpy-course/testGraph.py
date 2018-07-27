@@ -10,8 +10,22 @@ from matplotlib import pyplot as plt
 
 
 data = np.genfromtxt('data.txt', delimiter=',',dtype=( float, float, float, float, '|U8'))
+print(type(data))
+print(data.shape)
 print(data)
 
 #%%
-print(data[:,0])
+arr = []
+arr2= []
+for l in data:
+    arr = np.append(arr, l[1])
+    arr2=np.append(arr2,l[2])
 
+print(arr)
+print(arr2)
+
+#%%
+#print(data[:10])
+plt.plot( arr, 'ro')
+plt.plot( arr2, 'b.')
+plt.show()
