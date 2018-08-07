@@ -1,4 +1,4 @@
-// keybindings.json
+// keybindings.json (File > Preferances > Keyboard Shortcuts)
 // Place your key bindings in this file to overwrite the defaults
 [
     { "key": "ctrl+enter",            "command": "jupyter.execCurrentCell",

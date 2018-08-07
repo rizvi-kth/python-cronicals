@@ -1,4 +1,3 @@
-
 #%%
 import numpy as np
 from matplotlib import pyplot as plt
@@ -8,8 +7,7 @@ from matplotlib import pyplot as plt
 
 #https://www.youtube.com/watch?v=pQv6zMlYJ0A
 
-
-data = np.genfromtxt('data.txt', delimiter=',',dtype=( float, float, float, float, '|U8'))
+data = np.genfromtxt('data/iris.txt', delimiter=',',dtype=( float, float, float, float, '|U8'))
 print(type(data))
 print(data.shape)
 print(data)
@@ -53,12 +51,13 @@ print(outputs.shape)
 print('Output matrix would be:')
 print('%i X %i' %(outputs.shape[0], np.unique(outputs).shape[0]))
 
+
 #%%
 rows = outputs.shape[0]
 cols = np.unique(outputs).shape[0]
 outArr = np.zeros((rows,cols))
 for indx,item in enumerate(outArr):
-    print(outputs[indx])
+    #print(outputs[indx])
     if(outputs[indx] == 'Iris-set'):
         item[0] = 1
     if(outputs[indx] == 'Iris-ver'):
@@ -66,9 +65,7 @@ for indx,item in enumerate(outArr):
     if(outputs[indx] == 'Iris-vir'):
         item[2] = 1
     
-    print(item)
-
-
+print(outArr)
 
 #for indx,item in enumerate(b):
 #    print('%s = %i' %(item,indx))
