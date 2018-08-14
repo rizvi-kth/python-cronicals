@@ -1,0 +1,25 @@
+Changing system wide python
+===========================
+C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64
+to 
+C:\ProgramData\Anaconda3
+
+
+Environment Variables for Spark
+===============================
+PYSPARK_SUBMIT_ARGS="pyspark-shell"
+PYSPARK_DRIVER_PYTHON=jupyter
+PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+
+#PYSPARK_PYTHON=
+
+
+Problem 1: Exception
+================
+Python in worker has different version 3.6 than that in driver 3.5, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+FIX_1:
+python --version
+conda search python
+conda install python=3.6.3
