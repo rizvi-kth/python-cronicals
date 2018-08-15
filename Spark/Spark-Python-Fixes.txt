@@ -1,9 +1,13 @@
-Changing system wide python
-===========================
-C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64
-to 
-C:\ProgramData\Anaconda3
 
+
+
+To run Spark-driver with anaconda python change system wide python
+====================================================================
+From 1: C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64
+to   2: C:\ProgramData\Anaconda3
+
+Change it back to 1: to work with pip and Microsoft environment
+===============================================================
 
 Environment Variables for Spark
 ===============================
