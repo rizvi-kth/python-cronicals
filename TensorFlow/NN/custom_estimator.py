@@ -23,8 +23,7 @@ import iris_data
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--batch_size', default=100, type=int, help='batch size')
-parser.add_argument('--train_steps', default=1000, type=int,
-                    help='number of training steps')
+parser.add_argument('--train_steps', default=1000, type=int, help='number of training steps')
 
 def my_model(features, labels, mode, params):
     """DNN with three hidden layers, and dropout of 0.1 probability."""
@@ -64,7 +63,8 @@ def my_model(features, labels, mode, params):
     # Create training op.
     assert mode == tf.estimator.ModeKeys.TRAIN
 
-    optimizer = tf.train.AdagradOptimizer(learning_rate=0.1)
+    #optimizer = tf.train.AdagradOptimizer(learning_rate=0.1)
+    optimizer = tf.train.AdamOptimizer(learning_rate=0.001)
     train_op = optimizer.minimize(loss, global_step=tf.train.get_global_step())
     return tf.estimator.EstimatorSpec(mode, loss=loss, train_op=train_op)
 
@@ -74,11 +74,18 @@ def main(argv):
 
     # Fetch the data
     (train_x, train_y), (test_x, test_y) = iris_data.load_data()
+    #print(train_x)
+    #print(train_y)    
+    #return 
 
     # Feature columns describe how to use the input.
     my_feature_columns = []
     for key in train_x.keys():
         my_feature_columns.append(tf.feature_column.numeric_column(key=key))
+        
+    #for col in my_feature_columns:
+    #    print(col)
+    #return
 
     # Build 2 hidden layer DNN with 10, 10 units respectively.
     classifier = tf.estimator.Estimator(
