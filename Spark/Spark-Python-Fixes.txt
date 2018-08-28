@@ -1,4 +1,14 @@
+To start the Hadoop cluster for spark
+=====================================
+cd C:\tools\hadoop-2.8.3\sbin
+start-all.cmd
 
+# Check the Java processes are running
+jps
+
+# Start Spark with python 
+cd C:\tools\spark2\bin
+pyspark
 
 
 To run Spark-driver with anaconda python change system wide python
