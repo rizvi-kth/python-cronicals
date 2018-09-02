@@ -1,5 +1,0 @@
-{
-    "python.linting.enabled": false,
-    "python.pythonPath": "C:/ProgramData/Anaconda3/envs/tf-test/python.exe",
-    "files.autoSave": "onFocusChange"
-}
