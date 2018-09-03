@@ -1,1 +1,5 @@
-print("test"
+import pandas
+
+
+type(pandas)
+dir(pandas)
