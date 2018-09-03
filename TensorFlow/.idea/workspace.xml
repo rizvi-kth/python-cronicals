@@ -1,120 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Irish-flower/irish-prep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TensorFlow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TensorFlow.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/data_prep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog-checkpoints/checkpoint" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog-checkpoints/model.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog-checkpoints/model.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog-checkpoints/model.ckpt.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199076.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199078.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199080.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199081.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199084.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199814.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199816.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199818.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199820.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535199822.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535200020.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535200022.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535200024.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535200026.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535200028.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535226008.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535226010.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535226012.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535226014.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535226016.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535227403.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535227404.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535227406.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535227408.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535227411.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285474.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285476.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285478.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285480.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285482.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285808.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285810.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285812.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285814.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285816.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285901.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285903.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285905.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285907.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535285909.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287854.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287856.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287858.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287860.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287862.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287921.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287923.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287925.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287927.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit-recog/run1/events.out.tfevents.1535287929.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit_pred.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN-rz/digit_recog.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/DeepMNIST.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/MNIST_data/t10k-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/MNIST_data/t10k-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/MNIST_data/train-images-idx3-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/MNIST_data/train-labels-idx1-ubyte.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/SimpleMNIST.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/custom_estimator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/iris_data.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NN/m1-demo2-RunningPartsOfAGraph_ImageClassificationDNN.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.idea/tf-1st-drive.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.ipynb_checkpoints/tf-environment-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-environment.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-simple-graph.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-simple-graph/events.out.tfevents.1534420841.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-tensor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-tensor/events.out.tfevents.1534424866.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-tensor/events.out.tfevents.1534494964.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-tensor/events.out.tfevents.1534495085.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-tensor/events.out.tfevents.1534928819.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tf-test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/.idea/tp-practice.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535104002.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535104221.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535109746.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112173.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112231.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112466.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112477.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112717.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112860.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112897.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112943.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112958.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535112987.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535113114.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535118021.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535137630.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535195901.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535196055.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/events.out.tfevents.1535196584.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/test1/events.out.tfevents.1535108204.AF-35G7SF2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tf-1st-drive/tp-practice/test1/events.out.tfevents.1535109510.AF-35G7SF2" beforeDir="false" />
-    </list>
+    <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,14 +12,14 @@
     <session id="-1761234819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -164,11 +51,11 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Samples/iris_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="648">
               <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -177,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Irish-flower/irish-prep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+            <state relative-caret-position="324">
+              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -478,9 +365,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="2902" height="1597" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16251779" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1641791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -517,9 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="15" column="57" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -527,9 +411,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
           <caret line="21" column="57" selection-start-line="21" selection-start-column="57" selection-end-line="21" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,9 +418,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-709">
           <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -552,21 +430,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/SimpleMNIST.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <folding>
-            <element signature="e#89#112#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Samples/DeepMNIST.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/1st-drive/tf-test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -579,26 +447,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="565">
           <caret line="75" column="64" lean-forward="true" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="64" />
-          <folding>
-            <element signature="e#676#714#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Samples/iris_data.py">
+    <entry file="file://$PROJECT_DIR$/Irish-flower/irish-prep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="324">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Irish-flower/irish-prep.py">
+    <entry file="file://$PROJECT_DIR$/Samples/iris_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="47" column="22" lean-forward="true" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        <state relative-caret-position="648">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
