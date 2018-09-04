@@ -7,7 +7,6 @@ This is a temporary script file.
 
 import pandas as pd
 import os
-
 %matplotlib inline
 
 # Example usage of from_records method
@@ -82,22 +81,26 @@ df.iloc[264,4]
 df.loc[264,['Fare', 'Cabin']]
 df.iloc[264,:5]
 
+
+
 # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 # ### Experiment 1:  Process data column wise
 #____________________________________________
 
-
 CSV_PATH = os.path.join("TestData", "titanic_poluted.csv")
 # Proper data loading
 COLS_TO_USE = ['PassengerId','Survived', 'Pclass', 'Sex', 'Age', 'Fare', 'Cabin']
-df = pd.read_csv(CSV_PATH, usecols=COLS_TO_USE, index_col='PassengerId')
+df_init = pd.read_csv(CSV_PATH, usecols=COLS_TO_USE, index_col='PassengerId')
 
-df['Fare'].count()
-df_prs = pd.to_numeric(df['Fare'], errors = "coerce")
+print("Initial count on Fare {0}".format(df_init['Fare'].count()))
+# Convert the column to numeric
+df_pf = pd.to_numeric(df_init['Fare'], errors = "coerce")
 
 # It has become a series
-type(df_prs)
-df_prs.count()
+type(df_pf)
+
+print("After perse count on Fare {0}".format(df_pf.count()))
+
 # Detect the NaN ; usuallly they are at the end or statring of the column.
 df_prs.sort_values().tail()
 
@@ -109,14 +112,20 @@ df_prs.plot(kind='bar')
 
 from sklearn import preprocessing
 df = pd.DataFrame(df_prs)
-
+df.count()
 df = df.dropna(thresh=1)
+df.count()
 df.sort_values(by=['Fare']).tail()
 
 min_max_scaler = preprocessing.MinMaxScaler()
 np_scaled = min_max_scaler.fit_transform(df)
 df_normalized = pd.DataFrame(np_scaled)
+df_normalized.count()
 df_normalized.plot(kind='bar')
+type(df_normalized)
+
+df = df.assign(nFare=df_normalized)
+df
 
 
 '''
