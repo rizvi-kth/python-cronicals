@@ -26,7 +26,7 @@ df2["Price"]
 
 # If you run F9 - you need to go to (cd) the appropriate folder in the python console 
 # otherwise you will get 'File not found' exception.
-CSV_PATH = os.path.join("TestData", "titanic.csv")
+CSV_PATH = os.path.join("..","DataTitanic", "titanic.csv")
 
 # Read just 5 rows to see what's there
 df = pd.read_csv(CSV_PATH, nrows=5)
