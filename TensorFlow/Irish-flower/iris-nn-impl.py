@@ -1,3 +1,4 @@
+import argparse
 import pandas as pd
 import tensorflow as tf
 #import numpy as np
@@ -8,9 +9,6 @@ TEST_URL = "http://download.tensorflow.org/data/iris_test.csv"
 CSV_COLUMN_NAMES = ['SepalLength', 'SepalWidth',
                     'PetalLength', 'PetalWidth', 'Species']
 SPECIES = ['Setosa', 'Versicolor', 'Virginica']
-
-BATCH_SIZE = 10
-TRAIN_STEPS = 100
 
 def maybe_download():
     train_path = tf.keras.utils.get_file(TRAIN_URL.split('/')[-1], TRAIN_URL)
@@ -107,17 +105,21 @@ def my_model(features, labels, mode, params):
 
     # Compute loss.
     loss = tf.losses.sparse_softmax_cross_entropy(labels=labels, logits=logits)
+    tf.summary.scalar('loss', loss)
+    tf.summary.histogram('loss-histogram', loss)
 
     # Compute evaluation metrics.
-    accuracy = tf.metrics.accuracy(labels=labels,
-                                   predictions=predicted_classes,
-                                   name='acc_op')
+    accuracy = tf.metrics.accuracy(labels=labels, predictions=predicted_classes, name='acc_op')
     metrics = {'accuracy': accuracy}
+    # merging and saving them every 100 steps by default for Tensorboard
     tf.summary.scalar('accuracy', accuracy[1])
+    tf.summary.histogram('accuracy-histogram', accuracy[1])
+    # Stack Two histogram together
+    h = tf.stack([loss, accuracy[1]],0)
+    tf.summary.histogram('loss-accuricy', h)
 
     if mode == tf.estimator.ModeKeys.EVAL:
-        return tf.estimator.EstimatorSpec(
-            mode, loss=loss, eval_metric_ops=metrics)
+        return tf.estimator.EstimatorSpec( mode, loss=loss, eval_metric_ops=metrics)
 
     # Create training op.
     assert mode == tf.estimator.ModeKeys.TRAIN
@@ -127,48 +129,89 @@ def my_model(features, labels, mode, params):
     return tf.estimator.EstimatorSpec(mode, loss=loss, train_op=train_op)
 
 
+# =====================================================================================================
+# To run in TERMINAL Console use the following main declaration
+# Set 'Run -> Edit Configurations -> <this_file> -> Parameters' to '--batch_size 10 --train_steps 1000'
+# Uncomment the bellow code and INDENT the following code
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+def main(argv):
+    args = parser.parse_args(argv[1:])
+    BATCH_SIZE = args.batch_size
+    TRAIN_STEPS = args.train_steps
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-# Feature columns describe how to use the input.
-# It is a list of <class 'tensorflow.python.feature_column.feature_column._NumericColumn'>
-my_feature_columns = []
-for key in train_x.keys():
-    my_feature_columns.append(tf.feature_column.numeric_column(key=key))
+    # =====================================================================================================
+    # To run in PYTHON Console
+    # Uncomment the bellow code and UNINDENT the following code
+    # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    # tf.logging.set_verbosity(tf.logging.INFO)
+    # BATCH_SIZE = 10
+    # TRAIN_STEPS = 1000
+    # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-# Build 2 hidden layer DNN with 10, 10 units respectively.
-classifier = tf.estimator.Estimator(model_fn=my_model,
-                                    params={
-                                        'feature_columns': my_feature_columns,
-                                        # Two hidden layers of 10 nodes each.
-                                        'hidden_units': [10, 10],
-                                        # The model must choose between 3 classes.
-                                        'n_classes': 3,
-                                    })
 
-# Train the Model.
-classifier.train(input_fn=lambda: train_input_fn(train_x, train_y, BATCH_SIZE), steps = TRAIN_STEPS)
-# Evaluate the model.
-eval_result = classifier.evaluate(input_fn=lambda: eval_input_fn(test_x, test_y, BATCH_SIZE))
+    # Feature columns describe how to use the input.
+    # It is a list of <class 'tensorflow.python.feature_column.feature_column._NumericColumn'>
+    my_feature_columns = []
+    for key in train_x.keys():
+        my_feature_columns.append(tf.feature_column.numeric_column(key=key))
 
-print('\nTest set accuracy: {accuracy:0.3f}\n'.format(**eval_result))
+    # Build 2 hidden layer DNN with 10, 10 units respectively.
+    # Configure to log in a directory
+    # Configure to log every 50 epoch for Console Output. Make sure to INFO log by tf.logging.set_verbosity(tf.logging.INFO)
+    # Configure to log every 50 epoch for Tensorboard.
+    classifier = tf.estimator.Estimator(model_fn=my_model,
+                                        model_dir='./iris-nn-impl/log1',
+                                        config=tf.estimator.RunConfig(log_step_count_steps=50, save_summary_steps = 50),
+                                        params={
+                                            'feature_columns': my_feature_columns,
+                                            # Two hidden layers of 10 nodes each.
+                                            'hidden_units': [10, 10],
+                                            # The model must choose between 3 classes.
+                                            'n_classes': 3,
+                                        })
 
-# Generate predictions from the model
-expected = ['Setosa', 'Versicolor', 'Virginica']
-predict_x = {
-    'SepalLength': [5.1, 5.9, 6.9],
-    'SepalWidth': [3.3, 3.0, 3.1],
-    'PetalLength': [1.7, 4.2, 5.4],
-    'PetalWidth': [0.5, 1.5, 2.1],
-}
+    # Train the Model.
+    classifier.train(input_fn=lambda: train_input_fn(train_x, train_y, BATCH_SIZE), steps = TRAIN_STEPS)
+    # Evaluate the model.
+    eval_result = classifier.evaluate(input_fn=lambda: eval_input_fn(test_x, test_y, BATCH_SIZE))
 
-predictions = classifier.predict(input_fn=lambda:eval_input_fn(predict_x, labels=None, batch_size= BATCH_SIZE))
+    print('\nEvaluation accuracy for Test set : {accuracy:0.3f}\n'.format(**eval_result))
 
-for pred_dict, expec in zip(predictions, expected):
-    template = ('\nPrediction is "{}" ({:.1f}%), expected "{}"')
+    # Generate predictions from the model
+    expected = ['Setosa', 'Versicolor', 'Virginica']
+    predict_x = {
+        'SepalLength': [5.1, 5.9, 6.9],
+        'SepalWidth': [3.3, 3.0, 3.1],
+        'PetalLength': [1.7, 4.2, 5.4],
+        'PetalWidth': [0.5, 1.5, 2.1],
+    }
 
-    class_id = pred_dict['class_ids'][0]
-    probability = pred_dict['probabilities'][class_id]
+    predictions = classifier.predict(input_fn=lambda:eval_input_fn(predict_x, labels=None, batch_size= BATCH_SIZE))
 
-    print(template.format(SPECIES[class_id], 100 * probability, expec))
+    for pred_dict, expec in zip(predictions, expected):
+        template = ('\nPrediction is "{}" ({:.1f}%), expected "{}"')
 
-tf.logging.set_verbosity(tf.logging.INFO)
+        class_id = pred_dict['class_ids'][0]
+        probability = pred_dict['probabilities'][class_id]
+
+        print(template.format(SPECIES[class_id], 100 * probability, expec))
+
+
+
+
+# =====================================================================================================
+# To run in TERMINAL Console use the following main declaration
+# Set 'Run -> Edit Configurations -> <this_file> -> Parameters' to '--batch_size 10 --train_steps 1000'
+# Uncheck 'Run with python console'
+# Uncomment the bellow code
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+parser = argparse.ArgumentParser()
+parser.add_argument('--batch_size', default=10, type=int, help='batch size')
+parser.add_argument('--train_steps', default=1000, type=int, help='number of training steps')
+#
+if __name__ == '__main__':
+    tf.logging.set_verbosity(tf.logging.INFO)
+    tf.app.run(main)
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
