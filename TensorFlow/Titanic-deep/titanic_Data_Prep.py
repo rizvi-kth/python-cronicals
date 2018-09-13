@@ -139,6 +139,10 @@ def load_data(train_df, test_df, y_label='Survived'):
 (train_x, train_y), (test_x, test_y) = load_data(train_df, test_df, 'Survived')
 
 
+def get_Clean_Train_Test_Data():
+    return (train_x, train_y), (test_x, test_y)
+
+
 # ### Check the Train Test X and Y
 
 # In[133]:
