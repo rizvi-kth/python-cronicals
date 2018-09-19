@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="Tensorflow got saved and restored">
+    <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="Titanic with Sigmoid solved.">
+      <change afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/TensorFlow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TensorFlow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Titanic-deep/.ipynb_checkpoints/Titanic-data-prep-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Titanic-deep/.ipynb_checkpoints/Titanic-data-prep-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Titanic-deep/Titanic-data-prep.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Titanic-deep/Titanic-data-prep.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py" beforeDir="false" afterPath="$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py" beforeDir="false" afterPath="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,42 +22,43 @@
     <session id="-1761234819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="7" />
+          <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="ipynb" value="3" />
-          <entry key="py" value="35" />
+          <entry key="ipynb" value="4" />
+          <entry key="py" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IPNB" value="3" />
-          <entry key="Python" value="35" />
+          <entry key="IPNB" value="4" />
+          <entry key="Python" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="69" />
-          <entry key="Python" value="3572" />
+          <entry key="PLAIN_TEXT" value="163" />
+          <entry key="Python" value="4653" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="295" />
-          <entry key="dummy" value="28" />
-          <entry key="py" value="3277" />
-          <entry key="txt" value="41" />
+          <entry key="Python Console" value="313" />
+          <entry key="dummy" value="34" />
+          <entry key="py" value="4340" />
+          <entry key="txt" value="129" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -58,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Irish-flower/iris-nn-impl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
+            <state>
               <caret line="214" column="4" selection-start-line="214" selection-start-column="4" selection-end-line="214" selection-end-column="45" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -71,12 +79,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+            <state relative-caret-position="2592">
+              <caret line="148" column="29" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
               <folding>
-                <element signature="e#30#49#0" expanded="true" />
-                <marker date="1536849179514" expanded="true" signature="2240:2291" ph="..." />
-                <marker date="1536849179514" expanded="true" signature="5539:5544" ph="..." />
+                <marker date="1536922787233" expanded="true" signature="2072:2123" ph="..." />
+                <marker date="1536922787233" expanded="true" signature="5217:5222" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="47" column="66" lean-forward="true" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+            <state relative-caret-position="648">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -94,13 +101,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="463">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            <state relative-caret-position="-1156">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding>
-                <element signature="e#0#52#0" expanded="true" />
+                <element signature="e#10#28#0" expanded="true" />
+                <marker date="1537367673541" expanded="true" signature="2733:2734" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" selection-start-line="11" selection-start-column="19" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+              <folding>
+                <element signature="e#10#28#0" expanded="true" />
+                <marker date="1537371224594" expanded="true" signature="5478:5479" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,9 +152,15 @@
     <findStrings>
       <find>tf.</find>
       <find>train_input_fn</find>
+      <find>input_fn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="rizvi-kth &lt;rizvi.kth@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -142,17 +181,20 @@
         <option value="$PROJECT_DIR$/Titanic-deep/Titanic-data-prep.py" />
         <option value="$PROJECT_DIR$/Titanic-deep/titanicDataPrep.py" />
         <option value="$PROJECT_DIR$/Titanic-deep/titanic-deep-learn.py" />
-        <option value="$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py" />
         <option value="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn.py" />
+        <option value="$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py" />
         <option value="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py" />
+        <option value="$PROJECT_DIR$/Digit-CNN/Digit-data-prep.ipynb" />
+        <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn.py" />
+        <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="1942" />
-    <option name="height" value="1056" />
+    <option name="x" value="2561" />
+    <option name="y" value="30" />
+    <option name="width" value="1279" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -198,6 +240,11 @@
             <path>
               <item name="TensorFlow" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorFlow" type="462c0819:PsiDirectoryNode" />
+              <item name="Digit-CNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TensorFlow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TensorFlow" type="462c0819:PsiDirectoryNode" />
               <item name="Titanic-deep" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -208,9 +255,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="pyconsole" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="TensorFlow" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="TensorFlow" />
+      </console-settings>
+    </option>
     <option name="myShowVariablesByDefault" value="false" />
   </component>
   <component name="RunDashboard">
@@ -225,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.titanic_deep_learn_sigmoid">
+  <component name="RunManager" selected="Python.digit-cnn-predict">
     <configuration name="Tensorflow" type="PythonConfigurationType" factoryName="Python">
       <module name="TensorFlow" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,28 +300,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="titanic-deep-learn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="digit-cnn-predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TensorFlow" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Titanic-deep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Digit-CNN" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\A547184\Git\Repos\python-cronicals\TensorFlow\Titanic-deep\titanic_deep_learn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="titanicDataPrep" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="digit-cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TensorFlow" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -276,11 +326,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Titanic-deep" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Digit-CNN" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\A547184\Git\Repos\python-cronicals\TensorFlow\Titanic-deep\titanic_Data_Prep.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Digit-CNN/digit-cnn.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,19 +404,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.Tensorflow" />
-      <item itemvalue="Python.titanic-deep-learn" />
-      <item itemvalue="Python.titanicDataPrep" />
       <item itemvalue="Python.titanic_deep_learn" />
       <item itemvalue="Python.titanic_Data_Prep" />
       <item itemvalue="Python.titanic_deep_learn_sigmoid" />
+      <item itemvalue="Python.digit-cnn" />
+      <item itemvalue="Python.digit-cnn-predict" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.digit-cnn-predict" />
+        <item itemvalue="Python.digit-cnn" />
         <item itemvalue="Python.titanic_deep_learn_sigmoid" />
         <item itemvalue="Python.titanic_deep_learn" />
         <item itemvalue="Python.titanic_Data_Prep" />
-        <item itemvalue="Python.titanic-deep-learn" />
-        <item itemvalue="Python.titanicDataPrep" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +438,28 @@
       <option name="project" value="LOCAL" />
       <updated>1535319671215</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="A trial with sigmoid function">
+      <created>1536868241937</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536868241937</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Titanic with Sigmoid solved.">
+      <created>1536873435027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1536873435027</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Small fix in Notebook">
+      <created>1536873716171</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1536873716171</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -401,23 +472,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="2902" height="1597" extended-state="6" />
+    <frame x="1912" y="22" width="1936" height="1186" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11103303" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12012645" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info x="0" y="34" width="2880" height="1541" id="Python Console" order="3" weight="0.4181307" />
+      <window_info active="true" x="143" y="34" width="1011" height="603" id="Python Console" order="3" visible="true" weight="0.44625923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998565" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.39885223" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39828897" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32913268" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32783356" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3269962" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.42682928" />
+      <window_info anchor="bottom" x="1920" y="53" width="1920" height="1147" id="Run" order="9" type="WINDOWED" visible="true" weight="0.736692" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -428,7 +499,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tensorflow got saved and restored" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tensorflow got saved and restored" />
+    <MESSAGE value="A trial with sigmoid function" />
+    <MESSAGE value="Titanic with Sigmoid solved." />
+    <MESSAGE value="Small fix in Notebook" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small fix in Notebook" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -438,8 +512,47 @@
           <line>60</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="labels" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>labels</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>logits</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>labels.values</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>labels.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>print(labels)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/NN/m1-demo2-RunningPartsOfAGraph_ImageClassificationDNN.py" />
@@ -505,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-test/Lib/site-packages/tensorflow/python/estimator/estimator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="1132" selection-start-line="1132" selection-end-line="1132" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Irish-flower/iris-tf-pd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
@@ -530,9 +636,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-918">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -546,21 +649,40 @@
     <entry file="file://$PROJECT_DIR$/../Python-Course/python-practice/beyond-basic.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py">
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-test/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="131" column="48" selection-start-line="131" selection-start-column="48" selection-end-line="131" selection-end-column="48" />
+        <state relative-caret-position="405">
+          <caret line="677" column="4" selection-start-line="677" selection-start-column="4" selection-end-line="677" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-test/Lib/site-packages/tensorflow/python/estimator/estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7691">
+          <caret line="1169" selection-start-line="1169" selection-end-line="1169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-test/Lib/site-packages/tensorflow/python/framework/tensor_shape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="833" column="16" selection-start-line="833" selection-start-column="16" selection-end-line="833" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1157">
+          <caret line="121" column="44" selection-start-line="121" selection-start-column="44" selection-end-line="121" selection-end-column="44" />
           <folding>
-            <element signature="e#30#49#0" expanded="true" />
-            <marker date="1536849179514" expanded="true" signature="2240:2291" ph="..." />
-            <marker date="1536849179514" expanded="true" signature="5539:5544" ph="..." />
+            <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Irish-flower/iris-nn-impl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
+        <state>
           <caret line="214" column="4" selection-start-line="214" selection-start-column="4" selection-end-line="214" selection-end-column="45" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -569,29 +691,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-test/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py">
+    <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="677" column="4" selection-start-line="677" selection-start-column="4" selection-end-line="677" selection-end-column="22" />
+        <state relative-caret-position="2592">
+          <caret line="148" column="29" selection-start-line="148" selection-start-column="29" selection-end-line="148" selection-end-column="29" />
+          <folding>
+            <marker date="1536922787233" expanded="true" signature="2072:2123" ph="..." />
+            <marker date="1536922787233" expanded="true" signature="5217:5222" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="47" column="66" lean-forward="true" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+        <state relative-caret-position="648">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py">
+    <entry file="file://$PROJECT_DIR$/Digit-CNN/Digit-data-prep.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/estimator/inputs/numpy_io.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        <state relative-caret-position="2120">
+          <caret line="212" column="9" selection-start-line="212" selection-start-column="9" selection-end-line="212" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/estimator/estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11037">
+          <caret line="479" column="6" selection-start-line="479" selection-start-column="6" selection-end-line="479" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="11" selection-start-column="19" selection-end-line="20" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/ops/array_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="1693" column="4" selection-start-line="1693" selection-start-column="4" selection-end-line="1693" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1156">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#10#28#0" expanded="true" />
+            <marker date="1537367673541" expanded="true" signature="2733:2734" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/estimator/export/export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="140" column="8" selection-start-line="140" selection-start-column="8" selection-end-line="140" selection-end-column="8" />
+          <folding>
+            <element signature="e#10#28#0" expanded="true" />
+            <marker date="1537371224594" expanded="true" signature="5478:5479" ph="..." />
           </folding>
         </state>
       </provider>

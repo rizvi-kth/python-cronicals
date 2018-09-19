@@ -88,7 +88,7 @@ def eval_input_fn(features, labels, batch_size):
 
 
 BATCH_SIZE = 10
-TRAIN_STEPS = 1000
+TRAIN_STEPS = 10000
 tf.logging.set_verbosity(tf.logging.INFO)
 
 (train_x, train_y), (test_x, test_y) = get_Clean_Train_Test_Data()
@@ -117,7 +117,7 @@ for col in my_feature_columns:
 # Configure to log every 50 epoch for Console Output. Make sure to INFO log by tf.logging.set_verbosity(tf.logging.INFO)
 # Configure to log every 50 epoch for Tensorboard.
 classifier = tf.estimator.Estimator(model_fn=my_model_fn,
-                                    model_dir='./titanic_deep_learn/log1',
+                                    model_dir='./titanic_deep_learn_sigmoid/log1',
                                     config=tf.estimator.RunConfig(log_step_count_steps=50, save_summary_steps = 50),
                                     params={
                                         'feature_columns': my_feature_columns,
