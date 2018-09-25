@@ -123,8 +123,8 @@ mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn,
 # print(eval_results)
 
 # # Predict the model and print results
-# pred_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data}, num_epochs=1, shuffle=False)
-# predict_results = mnist_classifier.predict(input_fn=pred_input_fn)
+pred_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data}, num_epochs=1, shuffle=False)
+predict_results = mnist_classifier.predict(input_fn=pred_input_fn)
 
 # #Check all the afiled predictions
 # i=0
@@ -137,10 +137,53 @@ mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn,
 #     i += 1
 
 def serving_input_receiver_fn():
-    inputs = {
-        "x": tf.placeholder(tf.float32, shape=[None, 28, 28, 1]),
-    }
-    return tf.estimator.export.ServingInputReceiver(inputs, inputs)
+    # inputs = {
+    #     "x": tf.placeholder(tf.float32, shape=[None, 28, 28, 1]),
+    # }
+    # return tf.estimator.export.ServingInputReceiver(inputs, inputs)
+
+    # receiver_tensors = {
+    #     'my_image': tf.placeholder(tf.string, name='tf_image_input')
+    # }
+    # print(receiver_tensors)
+    # inputs = {
+    #     "x": tf.placeholder(tf.float32, shape=[None, 28, 28, 1]),
+    # }
+    # return tf.estimator.export.ServingInputReceiver(receiver_tensors=receiver_tensors, features=inputs)
+
+    feature_spec = { 'x': tf.FixedLenFeature(shape=[1,28,28,1], dtype=tf.float32)}
+
+    serialized_tf_example = tf.placeholder(shape=[], dtype=tf.string, name='input_image_tensor')
+    received_tensors = {'images': serialized_tf_example}
+
+    # features = tf.parse_example(serialized_tf_example, feature_spec)
+    # input_img_size = (28,28)
+    # fn = lambda image: _img_string_to_tensor(image, input_img_size)
+    # features['x'] = tf.map_fn(fn, features['x'], dtype=tf.float32)
+
+    # Cast 1D tensor to a scaler
+    scaler_image = tf.reshape(serialized_tf_example, [])
+    feature_tensor = _img_string_to_tensor(scaler_image  , image_size=(28, 28))
+    feature_spec = {"x": feature_tensor}
+
+    return tf.estimator.export.ServingInputReceiver(feature_spec, received_tensors)
+
+
+def _img_string_to_tensor(image_string, image_size=(28, 28)):
+    image_decoded = tf.image.decode_jpeg(image_string, channels=1)
+    # Convert from full range of uint8 to range [0,1] of float32.
+    image_decoded_as_float = tf.image.convert_image_dtype(image_decoded, dtype=tf.float32)
+
+    # Resize to expected
+    image_resized = tf.image.resize_images(image_decoded_as_float, size=image_size)
+    # image_resized = tf.reshape(image_decoded_as_float, [1,28,28,1])
+    image_resized.set_shape((28,28,1))
+
+    image_resized = tf.stack(image_resized)
+
+    return image_resized
+
+
 
 # Save the model
 mnist_classifier.export_savedmodel("./saved_models", serving_input_receiver_fn=serving_input_receiver_fn)

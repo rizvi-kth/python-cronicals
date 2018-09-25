@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="Titanic with Sigmoid solved.">
-      <change afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Samples/mnist_saved_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-CNN/digit-cnn-Saved_Model_inspect_in_Docker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn-Saved_Model_inspect_in_Docker.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-CNN/saved_models/1537371118/saved_model.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-CNN/saved_models/1537371118/variables/variables.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-CNN/saved_models/1537371118/variables/variables.index" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,29 +27,29 @@
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="10" />
-          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.5" value="4" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="digit-cnn-tf-server-setup" value="1" />
           <entry key="ipynb" value="4" />
-          <entry key="py" value="49" />
+          <entry key="py" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="4" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="49" />
+          <entry key="Python" value="59" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="262" />
-          <entry key="Python" value="4749" />
+          <entry key="Python" value="5560" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -51,7 +57,7 @@
           <entry key="Python Console" value="331" />
           <entry key="digit-cnn-tf-server-setup" value="99" />
           <entry key="dummy" value="34" />
-          <entry key="py" value="4418" />
+          <entry key="py" value="5229" />
           <entry key="txt" value="129" />
         </counts>
       </usages-collector>
@@ -60,19 +66,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Irish-flower/iris-nn-impl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5724">
-              <caret line="214" column="4" selection-start-line="214" selection-start-column="4" selection-end-line="214" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-                <marker date="1536677996429" expanded="true" signature="4991:4996" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Titanic-deep/titanic_Data_Prep.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,8 +107,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="563">
-              <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+            <state relative-caret-position="216">
+              <caret line="71" selection-start-line="33" selection-end-line="71" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -123,24 +116,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2889">
-              <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
+            <state relative-caret-position="545">
+              <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
               <folding>
                 <element signature="e#10#28#0" expanded="true" />
-                <marker date="1537371224594" expanded="true" signature="5478:5479" ph="..." />
+                <marker date="1537892384445" expanded="true" signature="5474:5479" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Samples/mnist_saved_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="219" lean-forward="true" selection-end-column="219" />
+            <state relative-caret-position="599">
+              <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+              <folding>
+                <element signature="e#1129#1166#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,9 +188,10 @@
         <option value="$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py" />
         <option value="$PROJECT_DIR$/Digit-CNN/Digit-data-prep.ipynb" />
         <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn.py" />
-        <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py" />
         <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup" />
+        <option value="$PROJECT_DIR$/Samples/mnist_saved_model.py" />
         <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py" />
+        <option value="$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py" />
       </list>
     </option>
   </component>
@@ -227,6 +224,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="TensorFlow" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,18 +250,7 @@
             <path>
               <item name="TensorFlow" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="Titanic-deep" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="TensorFlow" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="Samples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -286,7 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.digit-cnn-input">
+  <component name="RunManager" selected="Python.digit-cnn-predict">
     <configuration name="Tensorflow" type="PythonConfigurationType" factoryName="Python">
       <module name="TensorFlow" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -330,9 +327,6 @@
       <module name="TensorFlow" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Digit-CNN" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -420,8 +414,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.digit-cnn-input" />
         <item itemvalue="Python.digit-cnn-predict" />
+        <item itemvalue="Python.digit-cnn-input" />
         <item itemvalue="Python.digit-cnn" />
         <item itemvalue="Python.titanic_deep_learn_sigmoid" />
         <item itemvalue="Python.titanic_deep_learn" />
@@ -480,12 +474,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2869" y="34" width="2902" height="1777" extended-state="6" />
+    <frame x="2869" y="-11" width="2902" height="1597" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11981729" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.11981729" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info x="143" y="34" width="1011" height="603" id="Python Console" order="3" weight="0.3780745" />
+      <window_info active="true" x="143" y="34" width="1011" height="603" id="Python Console" order="3" visible="true" weight="0.4560787" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32998565" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39828897" />
@@ -494,7 +489,7 @@
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32913268" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3269962" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32998565" />
       <window_info anchor="bottom" x="0" y="23" width="1280" height="666" id="Run" order="9" type="WINDOWED" weight="0.736692" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -715,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/estimator/export/export.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-684">
-          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Irish-flower/iris-nn-impl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5724">
@@ -754,6 +742,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="219" lean-forward="true" selection-end-column="219" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -765,31 +760,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py">
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2889">
-          <caret line="108" column="66" selection-start-line="108" selection-start-column="66" selection-end-line="108" selection-end-column="66" />
-          <folding>
-            <element signature="e#10#28#0" expanded="true" />
-            <marker date="1537371224594" expanded="true" signature="5478:5479" ph="..." />
-          </folding>
+        <state relative-caret-position="615">
+          <caret line="2376" column="11" selection-start-line="2376" selection-start-column="11" selection-end-line="2376" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/ops/parsing_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1101">
+          <caret line="363" column="4" selection-start-line="363" selection-start-column="4" selection-end-line="363" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/estimator/export/export.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/ops/image_ops_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="940" column="23" selection-start-line="940" selection-start-column="23" selection-end-line="940" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-input.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="38" column="28" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        <state relative-caret-position="216">
+          <caret line="71" selection-start-line="33" selection-end-line="71" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-tf-server-setup">
+    <entry file="file://$PROJECT_DIR$/Samples/mnist_saved_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="219" lean-forward="true" selection-end-column="219" />
+        <state relative-caret-position="599">
+          <caret line="61" column="49" selection-start-line="61" selection-start-column="49" selection-end-line="61" selection-end-column="49" />
+          <folding>
+            <element signature="e#1129#1166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/ProgramData/Anaconda3/envs/tf-cnn/Lib/site-packages/tensorflow/python/ops/gen_image_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="989" column="20" lean-forward="true" selection-start-line="989" selection-start-column="20" selection-end-line="989" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn-predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="165" column="55" selection-start-line="165" selection-start-column="55" selection-end-line="165" selection-end-column="55" />
+          <folding>
+            <element signature="e#10#28#0" expanded="true" />
+            <marker date="1537892384445" expanded="true" signature="5474:5479" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

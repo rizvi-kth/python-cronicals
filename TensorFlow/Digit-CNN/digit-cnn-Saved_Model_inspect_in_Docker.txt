@@ -32,3 +32,28 @@ tensorflow/tensorflow:1.10.1-devel-py3 bash
 /usr/local/bin/saved_model_cli show --dir /mymodels/my_mnist --tag_set serve 
 /usr/local/bin/saved_model_cli show --dir /mymodels/my_mnist --tag_set serve --signature_def serving_default
 
+###########################
+C:\Users\A547184\Git\Repos\python-cronicals\TensorFlow\Digit-CNN\saved_models\1537867745
+
+docker run -it --rm -p 8888:8888 
+--mount type=bind,source=C:/Users/A547184/Git/Repos/python-cronicals/TensorFlow/Digit-CNN/saved_models/1537867745,target=/mymodels/my_mnist
+tensorflow/tensorflow:1.10.1-devel-py3 bash
+
+/usr/local/bin/saved_model_cli show --dir /mymodels/my_mnist --all
+
+docker run -it --rm -p 8888:8888 --mount type=bind,source=C:/Users/A547184/Git/Repos/python-cronicals/TensorFlow/Digit-CNN/saved_models/1537884991,target=/mymodels/my_mnist tensorflow/tensorflow:1.10.1-devel-py3 /usr/local/bin/saved_model_cli show --dir /mymodels/my_mnist --all
+
+
+
+
+###########################
+
+1. Test string post from RESTapi.
+
+{
+  "instances": [
+                  {"b64": "iVBORw"},
+                  {"b64": "pT4rmN"},
+                  {"b64": "w0KGg2"}
+                 ]
+}
