@@ -1,3 +1,8 @@
+#############################################################################
+#	Start Tensorflow/Serving container as an WebAPI for prediction service	#
+#############################################################################
+
+
 docker run -p 8501:8501 -p 8500:8500 
 --mount type=bind,source=C:/Users/A547184/Git/Repos/python-cronicals/TensorFlow/Digit-CNN/saved_models,target=/models/my_mnist
 -e MODEL_NAME=my_mnist -t tensorflow/serving
@@ -37,3 +42,27 @@ http://localhost:8501/v1/models/my_mnist:predict
                ]
 }
 
+
+
+#############################################
+#	Create image from a running container	#
+#############################################
+
+docker ps -a
+docker container commit -m "Digit-CNN Added" <Container-ID> digit-cnn:1.0
+
+
+docker run -d --name serving_base tensorflow/serving
+docker cp saved_models serving_base:/models/my_mnist
+docker commit --change "ENV MODEL_NAME my_mnist" serving_base digit-cnn:1.0
+docker kill serving_base
+
+This will leave you with a Docker image called "digit-cnn:1.0" that you can deploy and will load your model for serving on startup.
+
+#####################################
+#	Create image from a Dockerfile	#
+#####################################
+
+
+docker image build -t digit-cnn:2.0 .
+docker run -it -p 8501:8501 -p 8500:8500 digit-cnn:3.0
