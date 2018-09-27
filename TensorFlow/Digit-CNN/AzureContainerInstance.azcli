@@ -27,4 +27,7 @@ az container create -g $resourceGroupName -n $containerGroupName `
 
 az container list -g $resourceGroupName
 
+az container stop -g $resourceGroupName -n $containerGroupName
+
+az container start -g $resourceGroupName -n $containerGroupName
 
