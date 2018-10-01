@@ -80,62 +80,6 @@ def cnn_model_fn(features, labels, mode):
 
 
 
-# def main(unused_argv):
-
-# Load training and eval data
-mnist = tf.contrib.learn.datasets.load_dataset("mnist")
-# train_data = mnist.train.images # Returns np.array
-# train_labels = np.asarray(mnist.train.labels, dtype=np.int32)
-eval_data = mnist.test.images # Returns np.array
-eval_labels = np.asarray(mnist.test.labels, dtype=np.int32)
-
-# 55000 data samples
-# print("Train Samples: {}".format(train_data.shape[0]))
-# print("Train Outputs: {}".format(train_labels.shape[0]))
-
-# Sample size 28x28
-# 10000 test samples
-print("Eval Samples: {}".format(eval_data.shape[0]))
-print("Eval Outputs: {}".format(eval_labels.shape[0]))
-
-# Create the Estimator
-mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn,
-                                          model_dir="./digit-cnn/log2",
-                                          config=tf.estimator.RunConfig(log_step_count_steps=50,
-                                                                        save_summary_steps=50),
-                                          )
-
-# # Train the model
-# train_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": train_data},
-#                                                     y=train_labels,
-#                                                     batch_size=100,
-#                                                     num_epochs=None,
-#                                                     shuffle=True)
-# mnist_classifier.train(input_fn=train_input_fn,steps=5000,hooks=[logging_hook])
-#
-# # Evaluate the model and print results
-# eval_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data},
-#                                                    y=eval_labels,
-#                                                    num_epochs=1,
-#                                                    shuffle=False)
-#
-# eval_results = mnist_classifier.evaluate(input_fn=eval_input_fn)
-# print(eval_results)
-
-# # Predict the model and print results
-pred_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data}, num_epochs=1, shuffle=False)
-predict_results = mnist_classifier.predict(input_fn=pred_input_fn)
-
-# #Check all the afiled predictions
-# i=0
-# for item, org in zip(predict_results,eval_labels):
-#     if int(org) != int(item['classes']):
-#         print("************ Mismatch at Index: ", i)
-#         print("Original   : ", org)
-#         print("Prediction : ", item['classes'])
-#         print(item['probabilities'])
-#     i += 1
-
 def serving_input_receiver_fn():
     # inputs = {
     #     "x": tf.placeholder(tf.float32, shape=[None, 28, 28, 1]),
@@ -185,9 +129,66 @@ def _img_string_to_tensor(image_string, image_size=(28, 28)):
 
 
 
-# Save the model
-mnist_classifier.export_savedmodel("./saved_models", serving_input_receiver_fn=serving_input_receiver_fn)
+def main(unused_argv):
+    # Load training and eval data
+    mnist = tf.contrib.learn.datasets.load_dataset("mnist")
+    # train_data = mnist.train.images # Returns np.array
+    # train_labels = np.asarray(mnist.train.labels, dtype=np.int32)
+    eval_data = mnist.test.images # Returns np.array
+    eval_labels = np.asarray(mnist.test.labels, dtype=np.int32)
+
+    # 55000 data samples
+    # print("Train Samples: {}".format(train_data.shape[0]))
+    # print("Train Outputs: {}".format(train_labels.shape[0]))
+
+    # Sample size 28x28
+    # 10000 test samples
+    print("Eval Samples: {}".format(eval_data.shape[0]))
+    print("Eval Outputs: {}".format(eval_labels.shape[0]))
+
+    # Create the Estimator
+    mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn,
+                                              model_dir="./digit-cnn/log3",
+                                              config=tf.estimator.RunConfig(log_step_count_steps=50,
+                                                                            save_summary_steps=50),
+                                              )
+
+    # # Train the model
+    # train_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": train_data},
+    #                                                     y=train_labels,
+    #                                                     batch_size=100,
+    #                                                     num_epochs=None,
+    #                                                     shuffle=True)
+    # mnist_classifier.train(input_fn=train_input_fn,steps=5000,hooks=[logging_hook])
+    #
+    # # Evaluate the model and print results
+    # eval_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data},
+    #                                                    y=eval_labels,
+    #                                                    num_epochs=1,
+    #                                                    shuffle=False)
+    #
+    # eval_results = mnist_classifier.evaluate(input_fn=eval_input_fn)
+    # print(eval_results)
+
+    # # Predict the model and print results
+    pred_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": eval_data}, num_epochs=1, shuffle=False)
+    predict_results = mnist_classifier.predict(input_fn=pred_input_fn)
+
+    # #Check all the filed predictions
+    i=0
+    for item, org in zip(predict_results,eval_labels):
+        if int(org) != int(item['classes']):
+            print("************ Mismatch at Index: ", i)
+            print("Original   : ", org)
+            print("Prediction : ", item['classes'])
+            print(item['probabilities'])
+            i += 1
+    print("Total fail: {}".format(i))
 
 
-# if __name__ == "__main__":
-#     tf.app.run(main)
+    # Save the model
+    mnist_classifier.export_savedmodel("./digit-cnn/saved_model_3", serving_input_receiver_fn=serving_input_receiver_fn)
+
+
+if __name__ == "__main__":
+    tf.app.run(main)

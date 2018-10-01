@@ -13819,7 +13819,7 @@ node {
         dtype: DT_STRING
         tensor_shape {
         }
-        string_val: "_temp_efca67f0b7884af2a12ca3f66e1ee0f6/part"
+        string_val: "_temp_797ebca210784c069c34129f5dd0ef9c/part"
       }
     }
   }

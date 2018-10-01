@@ -24,23 +24,28 @@ first_image = mnist.test.images[0]
 first_image = np.array(first_image, dtype='float')
 print(first_image.shape)
 
-# Save the picture
-pixels = first_image.reshape((28, 28))
-plt.imshow(pixels, cmap='gray')
-plt.show()
-plt.imsave('seven.png',pixels, cmap='gray')
-
-# Encode base64 the picture
-import base64
-input_image = open("seven.png", "rb").read()
-# Encode image in b64
-encoded_input_string = base64.b64encode(input_image)
-input_string = encoded_input_string.decode("utf-8")
-print("Base64 encoded string: " )
-print(input_string)
+def SaveMnistImage(imageArray):
+    # Save the picture
+    pixels = first_image.reshape((28, 28))
+    plt.imshow(pixels, cmap='gray')
+    plt.show()
+    plt.imsave('seven.png',pixels, cmap='gray')
 
 
-# Test
+def EncodeImageB64():
+    # Encode base64 the picture
+    import base64
+    input_image = open("seven.png", "rb").read()
+    # Encode image in b64
+    encoded_input_string = base64.b64encode(input_image)
+    input_string = encoded_input_string.decode("utf-8")
+    print("Base64 encoded string: " )
+    print(input_string)
+
+EncodeImageB64()
+
+
+# Test Decode
 
 feature_spec = {'x': tf.FixedLenFeature(shape=[1,28,28,1], dtype=tf.float32)}
 

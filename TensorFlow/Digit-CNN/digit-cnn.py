@@ -92,7 +92,7 @@ def main(unused_argv):
 
     # Create the Estimator
     mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn,
-                                              model_dir="./digit-cnn/log3",
+                                              model_dir="./digit-cnn/log4",
                                               config=tf.estimator.RunConfig(log_step_count_steps=50,
                                                                             save_summary_steps=50),
                                               )
@@ -109,7 +109,7 @@ def main(unused_argv):
                                                         num_epochs=None,
                                                         shuffle=True)
     mnist_classifier.train(input_fn=train_input_fn,
-                           steps=5000,
+                           steps=20000,
                            hooks=[logging_hook])
 
     # Evaluate the model and print results
