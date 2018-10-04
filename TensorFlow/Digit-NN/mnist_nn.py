@@ -97,9 +97,6 @@ def cnn_model_fn(features, labels, mode):
     return tf.estimator.EstimatorSpec(mode=mode, loss=loss, eval_metric_ops=eval_metric_ops)
 
 
-# In[24]:
-
-
 # Create the Estimator
 mnist_classifier = tf.estimator.Estimator(model_fn=cnn_model_fn,
                                           model_dir="./checkpoints/log1",
@@ -131,7 +128,4 @@ eval_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": x_test},
                                                    shuffle=False)
 eval_results = mnist_classifier.evaluate(input_fn=eval_input_fn)
 print(eval_results)
-
-
-
 
