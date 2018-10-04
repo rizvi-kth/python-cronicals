@@ -102,14 +102,15 @@ def main(unused_argv):
     tensors_to_log = {"probabilities": "softmax_tensor"}
     logging_hook = tf.train.LoggingTensorHook(tensors=tensors_to_log, every_n_iter=10)
 
-    # Train the model
+    # Prepare input function
     train_input_fn = tf.estimator.inputs.numpy_input_fn(x={"x": train_data},
                                                         y=train_labels,
                                                         batch_size=100,
                                                         num_epochs=None,
                                                         shuffle=True)
+    # Train the model
     mnist_classifier.train(input_fn=train_input_fn,
-                           steps=20000,
+                           steps=1000,
                            hooks=[logging_hook])
 
     # Evaluate the model and print results

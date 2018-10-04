@@ -81,8 +81,7 @@ with tf.Session() as sess:
             X_batch, y_batch = mnist.train.next_batch(batch_size)
 
             _, loss_eval, fc1_eval, fc2_eval, logits_eval = \
-                sess.run([training_op, loss, fc1, fc2, logits],
-                         feed_dict={X: X_batch, y: y_batch})
+                sess.run([training_op, loss, fc1, fc2, logits], feed_dict={X: X_batch, y: y_batch})
             if iteration == num_iterations - 1:
                 print("Layer            :  Mean             Standard Deviation")
                 print("Fully connected 1: ", fc1_eval.mean(), fc1_eval.std())
