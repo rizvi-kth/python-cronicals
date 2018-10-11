@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-grey-lighter antialiased">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cool Fun 'n' Stuff</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="font-source-sans font-normal text-black leading-normal">
+  <div id="app">
+    <div class="flex bg-white border-b border-grey-lighter fixed pin-t pin-x z-100 h-16 items-center">
+      <div class="w-full max-w-xl relative mx-auto px-6 flex justify-center">
+        <div class="flex bg-grey-lightest rounded border border-grey-lighter px-6 pl-4">
+          <img class="w-12 h-12 mr-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQaSURBVGhD7df9SxNxHAdwf61fy36p/oegHzKpiOxhYZHVtAdS0h7UUMOsubWpUFaECc4ZaYXN+RARUf1Q4Q9pRdrTak63UMsS0nAGaUF3p667/Lj75Jx31z3OE3rDG/Zw3vfzYve9zZj/EZmsgrIlUPbp/Ep+fvmCbFtFVXaRvSenxDEAhcfwGrzHHqbvpFvssVnWio6T52uC5rLrTHgLLlQHj9nsXjiGPVyfgQGzrXaf6eLVGYDwmi5eY7JslX7dYsQgsLrFwEBZtgq/GAQWjtUVRg4CG8JUzD1GCQI755i4ROPSpIP5ASUILJwjrah+aI/17nL29NHJijWG2NWbjL71u9KpHWnHCa7hpDT9zG0i+/Jbau/ZFr/B8jA6nwwiDAdPMImHC5kE4xFyEkNyDSimgMir9pJlj0aZ0nvDTFQwkQjsJIZISsuTjMkIQ2ABs+9cq08zDB9CLiaE6JyB0BzzLwR2g0iMEAI7hSlVESMWgQWM0J6BPZEbcTnxtfRuQB2MVAR2g/EokZQ6GyMFgVWMkYvARmLkILCyMUoRWMQoQWABs7f0SdfOkmZx/6SphcCu2546kWy5NcE1nNSedPZOFN/0fX/2lRb+ZNRGJBgziUM2B1HofEfmXPESXMOJrfVm//ip2nfU+xGaaQ/Qfl7Mym3bFq7ebPSohkjOJAHxoO8XA1WCOd3UP25yesjuUZr58JNhukcZpn2Y9rgHmYXs+NOJ27iravOBvN9cQ0ltJGIGploaxtL4ecxU1/EXgfWP0MG2YdrBjj+deENyD9dQUsuHwJqcb0VjLA2fx8xOD9UTgcC+/Eb3suOHAntj7fbUAa7BpDSEqORFYEOYTkGMpfETZXF5yd4fswHYN9/ogdZBZjHLUAciFoE95XTzYswNfZS1vlMQAZ0FgcQbUmRfWlIRWFPtbExhfR9la+j6JwL6IkD3sONPZ9XG3ZWTmz3INahQ5SKwgMmtCWEKXR+pokZxCNjszwO0nR1/OnJuv0oRWMBklLePFzeJQ8Dtty1AezlvvxDYK/FbjF1iMGohsBfu+MdcT78QXIOHl/0O4f9CxIjBACLjNP8tVm5rHveTQhjRCIzQT5WElExCCwS2poUbM4UQ+mnCFy6M1ghsJIbdE9IRmHBMQspRTS4nviJGMQIDmLVb9w+lm+0k14Jatqr5I+VqGxxSjMDkllxdVuJy++74RzgX1KKwFqxZ7vQsZcdQJxb7s9hoYRABa7LLq5toYDRHYLTERA2B0QID5yp2vfFHDYGBBWFhNTBzhsCogYG/jerlxBclGN0gMHIwukNgpGB0i8CIwegegZnC1Lk7Gt2BYCQCXoP3dI/A5Je3L7DdeO042+TpvnT//QAUHtvqXtvhPfaw+RWz49UiKPv0f4QTE/MH9PY297QxhgoAAAAASUVORK5CYII=">
+          <h1 class="font-hairline text-grey-dark">Fun 'n' Stuff</h1>
+        </div>
+      </div>
+    </div>
+    <div class="pt-16 w-full max-w-xl mx-auto px-6 min-h-screen">
+      <div class="flex flex-row mt-2 border border-grey-light bg-white shadow rounded">
+        <div class="flex flex-col p-1">
+          <canvas ref="canvas" width="400px" height="400px" class="border border-grey-light bg-grey-lighter rounded" @mousedown="handleMouseDown" @mouseup="handleMouseUp" @mousemove="handleMouseMove"></canvas>
+          <div class="flex flex-row mt-1">
+            <button @click="$refs['canvas'].getContext('2d').clearRect(0, 0, 400, 400);$refs['canvas'].getContext('2d').beginPath();" class="bg-red-light hover:bg-red text-white font-bold py-3 px-4 rounded mr-1 w-1/5">Clear</button>
+            <button @click="send" :disabled="loading" class="bg-blue hover:bg-blue-dark text-white font-bold py-3 px-4 rounded flex-1">{{ loading ? 'Sending' : 'Send' }}</button>
+          </div>
+        </div>
+        <div class="p-1 pl-0 flex flex-1 flex-col items-stretch">
+          <div class="mt-auto border border-grey-light bg-grey-lightest rounded flex-1 flex flex-row">
+              <textarea class="w-1/2 p-1 mr-1 text-xs" readonly placeholder="Request" :value="request"></textarea>
+              <textarea class="w-1/2 p-1 text-xs" readonly placeholder="Response" :value="response"></textarea>
+          </div>
+          <div class="flex flex-col items-stretch">
+            <div class="border border-grey-light bg-grey-lightest rounded mt-1" v-if="result">
+              <p class="text-center font-semibold border-b border-grey-light text-grey-darker bg-grey-lighter rounded-t text-xl py-1">Result</p>
+              <p class="text-center text-5xl font-hairline text-grey-darker">{{ result }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+
+</html>

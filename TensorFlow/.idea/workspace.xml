@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="Cnn 3 with 96% accuricy.">
       <change beforePath="$PROJECT_DIR$/Digit-NN/.ipynb_checkpoints/mnist_nn-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/.ipynb_checkpoints/mnist_nn-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Digit-NN/mnist_nn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/mnist_nn.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Digit-NN/mnist_nn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/mnist_nn.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +78,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Digit-NN/mnist_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="116">
               <caret line="121" selection-start-line="121" selection-end-line="121" />
             </state>
           </provider>
@@ -144,10 +142,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2552" />
-    <option name="width" value="1487" />
-    <option name="height" value="1410" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="1" />
+    <option name="width" value="1598" />
+    <option name="height" value="862" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -454,16 +452,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2552" y="0" width="1487" height="1410" extended-state="0" />
-    <editor active="true" />
+    <frame x="2561" y="0" width="1598" height="863" extended-state="1" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15683553" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14561856" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" x="2560" y="29" width="2560" height="1373" id="Python Console" order="3" type="WINDOWED" visible="true" weight="0.52591795" />
+      <window_info active="true" x="10" y="39" width="1580" height="813" id="Python Console" order="3" type="WINDOWED" visible="true" weight="0.52591795" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932073" />
-      <window_info anchor="bottom" id="Debug" order="2" visible="true" weight="0.19806764" />
+      <window_info anchor="bottom" id="Debug" order="2" visible="true" weight="0.35395685" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" weight="0.18690096" />
@@ -801,7 +798,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Digit-NN/mnist_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="116">
           <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>

@@ -65,3 +65,16 @@ docker kill serving_base
 
 docker image build -t digit-cnn:2.0 .
 docker run -it -p 8501:8501 -p 8500:8500 digit-cnn:3.0
+
+#####################################
+#	A client with the server         	#
+#####################################
+
+docker run -it -p 8501:8501 --name backend  -p 8500:8500 voidrizvi/digit-cnn:3.0
+cd C:\Users\A547184\Git\Repos\python-cronicals\TensorFlow\Digit-CNN\Client_Digit_CNN
+docker run --name frontend -p 8081:80 --link backend:digit -v ${PWD}:/usr/share/nginx/html:ro -v ${PWD}/nginx.conf:/etc/nginx/nginx.conf:ro -d nginx
+
+
+
+
+
