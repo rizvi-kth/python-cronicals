@@ -60,7 +60,7 @@ docker kill serving_base
 # This will leave you with a Docker image called "digit-cnn:1.0" that you can deploy and will load your model for serving on startup.
 
 #####################################
-#	Create image from a Dockerfile	#
+#	Create image from a Dockerfile	  #
 #####################################
 
 docker image build -t digit-cnn:2.0 .
