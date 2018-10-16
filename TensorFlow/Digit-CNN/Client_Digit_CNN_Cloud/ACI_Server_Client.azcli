@@ -1,0 +1,44 @@
+az login
+az account show
+az account list 
+
+$resourceGroupName = "Digit-Cnn-App-Group"
+$containerGroupName = "digit-cnn-cont"
+$containerGroupPort = 8501
+$imageName = "voidrizvi/digit-cnn:3.0"
+
+echo $resourceGroupName
+echo $containerGroupName
+echo $imageName
+echo $containerGroupPort
+
+# Show/Create resource groups
+az group list -o table 
+#az group create -l "westeurope" -n $resourceGroupName
+
+# Show/Create ContainerGroup
+az container create -g $resourceGroupName -n $containerGroupName ` 
+                    --image $imageName `
+                    --ports 8501 8500 `
+                    --ip-address public `
+                    --cpu 4 `
+                    --memory 14 ` 
+                    --dns-name-label digitcnnapi
+
+az container list -g $resourceGroupName
+
+az container stop -g $resourceGroupName -n $containerGroupName
+
+az container start -g $resourceGroupName -n $containerGroupName
+
+
+# digitcnnapi.westeurope.azurecontainer.io:8501
+
+# Show/Create ContainerGroup
+az container create -g $resourceGroupName -n $containerGroupName ` 
+                    --image $imageName `
+                    --ports 8081 80 `
+                    --ip-address public `
+                    --cpu 2 `
+                    --memory 6 ` 
+                    --dns-name-label digitcnnapi

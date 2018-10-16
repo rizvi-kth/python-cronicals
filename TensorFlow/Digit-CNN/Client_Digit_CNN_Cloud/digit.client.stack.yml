@@ -1,24 +1,24 @@
 version: '3'
 services:
   # Digit Server
-  digit:
-    image: voidrizvi/digit-cnn:3.0
-    ports:
-      - "8500:8500"
-      - "8501:8501"
-    networks:
-      - backend
-    deploy:
-      replicas: 1
+  # digit:
+  #   image: voidrizvi/digit-cnn:3.0
+  #   ports:
+  #     - "8500:8500"
+  #     - "8501:8501"
+  #   networks:
+  #     - backend
+  #   deploy:
+  #     replicas: 1
   # Client
   digitfront:
     image: nginx
     ports:
       - "8081:80"
-    networks:
-      - backend
+    #networks:
+    #  - backend
     environment:
-      - DIGIT_SERVER:digit
+      - DIGIT_SERVER=digit
     volumes:
       - "./client-app_2:/usr/share/nginx/html"
       - "./client-app_2/nginx.conf:/etc/nginx/nginx.conf"
