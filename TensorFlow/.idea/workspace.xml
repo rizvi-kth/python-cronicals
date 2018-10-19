@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d0da6f1-5a72-4e7b-b75c-0d57cb758bd8" name="Default Changelist" comment="Cnn 3 with 96% accuricy.">
-      <change beforePath="$PROJECT_DIR$/Digit-CNN/Client_Digit_CNN/docker-commands.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-CNN/Client_Digit_CNN/docker-commands.ps1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/graph.pbtxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/model.ckpt-1100.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/model.ckpt-1100.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/model.ckpt-1100.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/model.ckpt-9100.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/checkpoints/log1/model.ckpt-9100.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/checkpoint" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/checkpoint" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/graph.pbtxt" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/graph.pbtxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/model.ckpt-0.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/model.ckpt-0.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/model.ckpt-0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/model.ckpt-65000.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/checkpoints/log2jupyter/model.ckpt-65000.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Digit-NN/mnist_nn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Digit-NN/mnist_nn.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +27,14 @@
     <session id="-1761234819">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.4" value="12" />
+          <entry key="project.open.time.4" value="13" />
           <entry key="project.open.time.5" value="7" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="29" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -65,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="838">
+            <state relative-caret-position="733">
               <caret line="123" selection-start-line="115" selection-start-column="4" selection-end-line="123" />
               <folding>
                 <element signature="e#10#28#0" expanded="true" />
@@ -78,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Digit-NN/mnist_nn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="837">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -142,11 +155,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="5" />
-    <option name="width" value="1598" />
-    <option name="height" value="863" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="3094" />
+    <option name="height" value="1704" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -192,12 +205,7 @@
             <path>
               <item name="TensorFlow" type="b2602c69:ProjectViewProjectNode" />
               <item name="TensorFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="Digit-NN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TensorFlow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TensorFlow" type="462c0819:PsiDirectoryNode" />
-              <item name="Digit-Recog" type="462c0819:PsiDirectoryNode" />
+              <item name="Digit-CNN" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -453,12 +461,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="5" width="1598" height="863" extended-state="0" />
+    <frame x="-11" y="-11" width="3094" height="1704" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14561856" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14976959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" x="10" y="39" width="1580" height="813" id="Python Console" order="3" type="WINDOWED" visible="true" weight="0.52591795" />
+      <window_info x="0" y="34" width="3072" height="1648" id="Python Console" order="3" type="WINDOWED" weight="0.52591795" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932073" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.35395685" />
@@ -497,16 +506,6 @@
           <url>file://$PROJECT_DIR$/Titanic-deep/titanic_deep_learn_sigmoid.py</url>
           <line>33</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Digit-NN/mnist_nn.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Digit-NN/mnist_nn.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -788,7 +787,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Digit-CNN/digit-cnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="838">
+        <state relative-caret-position="733">
           <caret line="123" selection-start-line="115" selection-start-column="4" selection-end-line="123" />
           <folding>
             <element signature="e#10#28#0" expanded="true" />
@@ -799,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Digit-NN/mnist_nn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="837">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
