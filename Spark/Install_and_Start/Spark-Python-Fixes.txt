@@ -1,0 +1,62 @@
+To start the Hadoop cluster for spark
+=====================================
+cd C:\tools\hadoop-2.8.3\sbin
+start-all.cmd
+
+# Check the Java processes are running
+jps
+
+# Start Spark with python 
+cd C:\tools\spark2\bin
+pyspark
+
+
+To run Spark-driver with anaconda python change system wide python
+====================================================================
+From 1: C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64
+to   2: C:\ProgramData\Anaconda3
+
+Change it back to 1: to work with pip and Microsoft environment
+===============================================================
+
+Environment Variables for Spark
+===============================
+PYSPARK_SUBMIT_ARGS="pyspark-shell"
+PYSPARK_DRIVER_PYTHON=jupyter
+PYSPARK_DRIVER_PYTHON_OPTS='notebook' pyspark
+
+#PYSPARK_PYTHON=
+
+
+Problem 1: Exception
+================
+Python in worker has different version 3.6 than that in driver 3.5, PySpark cannot run with different minor versions.
+Please check environment variables PYSPARK_PYTHON and PYSPARK_DRIVER_PYTHON are correctly set.
+
+FIX_1:
+python --version
+conda search python
+conda install python=3.6.3
+
+
+Brows HDFS file system
+======================
+http://localhost:50070
+http://localhost:8088
+
+
+Copy a file from local to hdfs
+==============================
+hadoop fs -h   (: Check hadoop commands
+hadoop fs -ls /
+hadoop fs -mkdir /RzTest 	(: Make a directory
+hadoop fs -copyFromLocal C:\tools\spark2\bin\code\myDataSet\titanic.csv /RzTest 	(: Copy a file
+hadoop fs -copyFromLocal C:\Users\A547184\Documents\_etc\2223-kth\sparkml_data\data\sales.csv /RzTest 	(: Copy a file
+
+C:\Users\A547184\Documents\_etc\2223-kth\sparkml_data\data\sales.csv
+hadoop fs -ls /RzTest
+
+URL for pyspark to read
+=======================
+hdfs://localhost:9000/RzTest/titanic.csv
+- Take localhost:9000 from hadoop core-site.xml config file's fs.defaultFS parameter value.
