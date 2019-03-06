@@ -1,0 +1,22 @@
+# docker-compose up
+# docker-compose -f jupyter-compose.yml -e COMPOSE_CONVERT_WINDOWS_PATHS=1 up/rm
+# If the sharing doesn't work properly reset credential at docker -> settings -> shared drive -> reset credentials.
+version: '3.7'
+services:
+  spark-notebook:
+    image: jupyter/all-spark-notebook
+    container_name: jupyter-spark
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./Titanic-Kaggle/.:/home/jovyan/work/Titanic-Kaggle"
+    #  - "./code/.:/home/jovyan/work"
+      
+    # volumes:
+    #   - type: bind
+    #     source: ./data/sales.csv
+    #     target: /home/jovyan/work/dataset
+    # volumes:  
+    #  - "./data:/home/jovyan/work/dataset"
+    #  - "$(pwd)/data:/home/jovyan/work/dataset"
+    #  - C:/Users/A547184/Git/Repos/python-cronicals/Spark/SparkCourse/code:/home/jovyan/work
