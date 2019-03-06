@@ -1,0 +1,12 @@
+docker pull jupyter/all-spark-notebook
+docker pull jupyter/tensorflow-notebook
+
+
+docker run -it --name jupyter-spark -p 8888:8888 jupyter/all-spark-notebook
+docker exec -it jupyter-spark /bin/bash
+docker cp C:/Users/A547184/Git/Repos/python-cronicals/Spark/SparkCourse/data/. jupyter-spark:/home/jovyan/work/Dataset
+
+
+# Test the volume mount
+docker run --rm -v C:/Users/A547184/Git/Repos/python-cronicals/Spark/SparkCourse/data/.:/data alpine ls /data
+docker run --rm -v "$(pwd)/data/.:/data" alpine ls /data
