@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ddd4cbe-6815-428c-a878-d9963bad798b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ML/Titanic-Kaggle/Titan_First.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../ML/Titanic-Kaggle/Titan_First.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-practice/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-practice/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-practice/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-practice/scripts/ArrayUpdate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-practice/scripts/Array_find.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../python-practice/scripts/iterTool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ML/Titanic-Kaggle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ML/Titanic-Kaggle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ML/Titanic-Kaggle/.ipynb_checkpoints/Titan_First-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ML/Titanic-Kaggle/Titan_First.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ML/docker_prepare.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../ML/docker_prepare.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-practice/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python-practice/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-practice/.idea/python-practice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python-practice/.idea/python-practice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-practice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python-practice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python-practice/collection-etc.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../python-practice/collection-etc.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +25,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,8 +57,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python-practice-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -115,7 +139,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

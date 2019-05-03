@@ -9,4 +9,4 @@ docker cp C:/Users/A547184/Git/Repos/python-cronicals/Spark/SparkCourse/data/. j
 
 # Test the volume mount
 docker run --rm -v C:/Users/A547184/Git/Repos/python-cronicals/Spark/SparkCourse/data/.:/data alpine ls /data
-docker run --rm -v "$(pwd)/data/.:/data" alpine ls /data
+PowerShell>> docker run --rm -v "$(pwd)/data/.:/data" alpine ls /data
