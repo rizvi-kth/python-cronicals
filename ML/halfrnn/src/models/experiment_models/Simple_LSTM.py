@@ -26,7 +26,7 @@ seq_length = 3
 sample_count = 100
 data = [[i+j for j in range(seq_length)] for i in range(sample_count)]
 # print(data)
-target = [[i+j+1 for j in range(seq_length)] for i in range(1,sample_count+1)]
+target = [[i+j+1 for j in range(seq_length)] for i in range(1, sample_count+1)]
 # print(target)
 
 
