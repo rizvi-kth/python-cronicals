@@ -6,11 +6,12 @@ import os
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-print("Tensorflow version:", tf.__version__)
 from tensorflow import keras
 from tensorflow.python.keras.callbacks import TensorBoard
 # tensorboard --logdir ./ --host=127.0.0.1
 from time import time
+
+print("Tensorflow version:", tf.__version__)
 
 SEQUENCE_LENGTH = 200
 VACAB_FEATURES = 100
@@ -25,8 +26,8 @@ def train_lstm_rnn(train_x, train_y, test_x, test_y):
     embedding = keras.layers.Embedding(VOCAB_SIZE, VACAB_FEATURES, input_length=SEQUENCE_LENGTH)(deep_inputs)
     dropout = keras.layers.Dropout(0.2)(embedding)
     lstm_1 = keras.layers.LSTM(units=100, return_sequences=True)(dropout)  # batch_input_shape=[None, SEQUENCE_LENGTH, VACAB_FEATURES]
-    lstm_2 = keras.layers.LSTM(units=100, return_sequences=False)(lstm_1)    # batch_input_shape=[None, SEQUENCE_LENGTH, VACAB_FEATURES],
-    final_dense = keras.layers.Dense(10, activation='softmax')(lstm_2)
+    lstm_2 = keras.layers.LSTM(units=100, return_sequences=False)(lstm_1)  # batch_input_shape=[None, SEQUENCE_LENGTH, VACAB_FEATURES],
+    final_dense = keras.layers.Dense(2, activation='softmax')(lstm_2)
     deep_model = keras.Model(inputs=deep_inputs, outputs=final_dense)
     print(deep_model.summary())
 
@@ -39,7 +40,7 @@ def train_lstm_rnn(train_x, train_y, test_x, test_y):
     #                          epochs=50,
     #                          validation_data=(test_x, test_y))
     history = deep_model.fit(train_x, train_y, batch_size=100,
-                             epochs=10,
+                             epochs=6,
                              validation_split=.2,
                              callbacks=[tensorboard])
 
@@ -79,10 +80,10 @@ def prepare_training_data(review_text_array):
     input_seq_normalized = np.asarray(input_seq_padded, dtype=np.float)
 
     # Output data type conversion
-    output = np.asarray(review_text_array[0:, 1], dtype=np.float)
+    output = np.asarray(review_text_array[0:, 2], dtype=np.float)
     # As the scores are in 1-10 we need to transform to 0-9 for categorical
-    output -= 1
-    output_y = keras.utils.to_categorical(output, num_classes=10)
+    # output -= 1
+    output_y = keras.utils.to_categorical(output, num_classes=2)
 
     return input_seq_normalized, output_y
 
