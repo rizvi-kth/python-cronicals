@@ -3,6 +3,7 @@ import logging
 from pathlib import Path
 # from dotenv import find_dotenv, load_dotenv
 import os
+import sys
 import pandas as pd
 import numpy as np
 import tensorflow as tf
@@ -39,8 +40,8 @@ def train_lstm_rnn(train_x, train_y, test_x, test_y):
     # history = deep_model.fit(train_x, train_y, batch_size=100,
     #                          epochs=50,
     #                          validation_data=(test_x, test_y))
-    history = deep_model.fit(train_x, train_y, batch_size=100,
-                             epochs=6,
+    history = deep_model.fit(train_x, train_y, batch_size=100, 
+                             epochs=5,
                              validation_split=.2,
                              callbacks=[tensorboard])
 
@@ -120,6 +121,9 @@ def main(train_tokens_file, test_tokens_file):
     print(test_y[0:2])
 
     train_lstm_rnn(train_x, train_y, test_x, test_y)
+    
+    
+    
 
 
 if __name__ == '__main__':
@@ -135,3 +139,4 @@ if __name__ == '__main__':
     # load_dotenv(find_dotenv())
 
     main()
+    
