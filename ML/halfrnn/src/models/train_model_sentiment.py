@@ -16,7 +16,7 @@ print("Tensorflow version:", tf.__version__)
 
 SEQUENCE_LENGTH = 200
 VACAB_FEATURES = 100
-VOCAB_SIZE = 60064 # 3575 # 3443
+VOCAB_SIZE = 60064  # 3575 # 3443
 
 
 def train_lstm_rnn(train_x, train_y, test_x, test_y):
