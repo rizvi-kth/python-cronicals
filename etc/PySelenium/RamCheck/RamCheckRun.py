@@ -1,7 +1,9 @@
 import time
 from selenium import webdriver
 
-browser = webdriver.Chrome('../third/chromedriver_v73.exe')
+# browser = webdriver.Chrome('../third/chromedriver_v74.exe')
+browser = webdriver.Chrome('C:\\tools\\chromedrivers\\chromedriver_v74.exe')
+
 browser.set_page_load_timeout(30)
 browser.get('https://www.dustinhome.se/product/5010752115/ram')
 # btn = driver.find_element_by_xpath('//*[@id="site-selector"]/div/div/div[2]/div[2]/div[3]/a')
