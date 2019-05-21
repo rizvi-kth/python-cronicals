@@ -1,9 +1,9 @@
 import pandas as pd
 from datetime import datetime
+CSV_PATH = 'C:\\tools\\chromedrivers\\ram_price.csv'
 
-
-def write_new_price_to_file(new_price):
-    with open("ram_price.csv", mode='a') as file:
+def write_new_price_to_file(new_price):    
+    with open(CSV_PATH, mode='a') as file:
         print('Writing to file :{:d}'.format(new_price))
         file.write('{:d}, {:%Y-%m-%d %H:%M:%S}\n'.format(new_price, datetime.now()))
 
@@ -11,7 +11,7 @@ def write_new_price_to_file(new_price):
 def if_notify(new_price):
     df = None
     try:
-        df = pd.read_csv('ram_price.csv', sep=",", parse_dates=True, header=None)  # index_col=0, # RamCheck/
+        df = pd.read_csv(CSV_PATH, sep=",", parse_dates=True, header=None)  # index_col=0, # RamCheck/
     except:
         print('Could not read!')
         # But write

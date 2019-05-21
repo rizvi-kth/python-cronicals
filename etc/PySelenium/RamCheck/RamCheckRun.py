@@ -4,8 +4,8 @@ import time
 from selenium import webdriver
 #from .saveramdata import if_notify
 
-browser = webdriver.Chrome('../third/chromedriver_v74.exe')
-# browser = webdriver.Chrome('C:\\tools\\chromedrivers\\chromedriver_v74.exe')
+# browser = webdriver.Chrome('../third/chromedriver_v74.exe')
+browser = webdriver.Chrome('C:\\tools\\chromedrivers\\chromedriver_v74.exe')
 
 
 browser.set_page_load_timeout(30)
@@ -27,7 +27,7 @@ if if_notify(int(ram_price.split('kr')[0].replace(' ', ''))):
     name.send_keys('rizvi_du')
 
     code = form .find_element_by_id('in_code')
-    code.send_keys('') # 328647
+    code.send_keys('328647') # 328647
 
     # //*[@id="pushForm"]/textarea
     msg = form .find_element_by_xpath('//*/textarea')
@@ -36,7 +36,7 @@ if if_notify(int(ram_price.split('kr')[0].replace(' ', ''))):
     submit = form.find_element_by_id('submit')
     submit.click()
 
-    # browser.maximize_window()
-    time.sleep(5)
-    browser.quit()
+# browser.maximize_window()
+time.sleep(5)
+browser.quit()
 
