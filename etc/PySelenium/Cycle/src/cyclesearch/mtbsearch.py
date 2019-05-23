@@ -1,4 +1,6 @@
 import time
+import pandas as pd
+
 from selenium import webdriver
 #from .saveramdata import if_notify
 from . import WEB_DRIVER_LOCATION
