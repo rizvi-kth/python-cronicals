@@ -1,10 +1,10 @@
 import time
 from selenium import webdriver
 #from .saveramdata import if_notify
+from . import WEB_DRIVER_LOCATION
+from . import START_URL
+from ..utils import putils
 
-WEB_DRIVER_LOCATION = '../RAM/third/chromedriver_v74.exe'
-# WEB_DRIVER_LOCATION = 'C:\\tools\\chromedrivers\\chromedriver_v74.exe'
-START_URL = 'https://www.xxl.se/cykel/cyklar/mountainbike-mtb/c/100300'
 
 browser = webdriver.Chrome(WEB_DRIVER_LOCATION)
 browser.set_page_load_timeout(30)
@@ -24,10 +24,14 @@ prices = []
 names = []
 for card in cards:
     names.append(card.get_attribute("data-name"))
+    print(card.get_attribute("data-name"))
     prices.append(card.get_attribute("data-price"))
+    print(card.get_attribute("data-price"))
     urls.append(card.get_attribute("href"))
+    print(card.get_attribute("href"))
 
 print('Total MTB count: ', len(names))
+# exit(0)
 
 for i, url in enumerate(urls):
     browser.get(url)
@@ -37,8 +41,10 @@ for i, url in enumerate(urls):
     # print(prices[i])
     description = browser.find_element_by_xpath('/html/body/main/div[2]/div/div[2]/div[6]/div[3]').text
     descriptions = description.split('\n')
-    weight = [des for des in descriptions if 'Vikt' in des and len(des) < 20] or False
-    print(prices[i], weight, names[i])
+    weight = [des for des in descriptions if '- Vikt:' in des and len(des) < 50] or False
+    ram = [des for des in descriptions if '- Ram:' in des and len(des) < 50] or False
+
+    print(i, prices[i], putils.get_first_digit_in_string(weight), weight, ram, names[i])
 
 
 #browser.back()
