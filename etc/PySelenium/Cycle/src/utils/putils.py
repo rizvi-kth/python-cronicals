@@ -1,3 +1,5 @@
+from . import CSV_PATH
+from datetime import datetime
 
 def try_parse_float(string, fail=False):
     try:
@@ -16,3 +18,9 @@ def get_first_digit_in_string(weight):
             print(w_int[0])
             return float(w_int[0])
     return 0
+
+
+def write_new_price_to_file(new_record):
+    with open(CSV_PATH, mode='a') as file:
+        # print('Writing to file :{:d}'.format(new_price))
+        file.write('{:%Y-%m-%d %H:%M:%S}, {:s}\n'.format(datetime.now(), new_record))

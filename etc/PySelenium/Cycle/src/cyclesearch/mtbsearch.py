@@ -46,8 +46,13 @@ for i, url in enumerate(urls):
     weight = [des for des in descriptions if '- Vikt:' in des and len(des) < 50] or False
     ram = [des for des in descriptions if '- Ram:' in des and len(des) < 50] or False
 
-    print(i, prices[i], putils.get_first_digit_in_string(weight), weight, ram, names[i])
+    # record = '{:d}, {:s}, {:.2f}, {:s}, {:s}, {:s} '.format(i, prices[i], putils.get_first_digit_in_string(weight), str(weight), str(ram), names[i])
+    record = '{:d}, {:s}, {:.2f}, {:s}, {:s}'.format(i, prices[i], putils.get_first_digit_in_string(weight),
+                                                            str(weight), str(ram))
 
+    print(record)
+
+    putils.write_new_price_to_file(record)
 
 #browser.back()
 
