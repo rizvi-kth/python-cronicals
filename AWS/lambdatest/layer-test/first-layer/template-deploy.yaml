@@ -1,0 +1,53 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'first-layer
+
+  Sample SAM Template for first-layer
+
+  '
+Globals:
+  Function:
+    Timeout: 30
+Resources:
+  Spider2Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: hello_world/
+      Handler: app.lambda_handler
+      Runtime: python3.7
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /hello
+            Method: get
+      Layers:
+        - !Ref MyPyLibs
+
+  MyPyLibs:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: mypy-layer
+      Description: Dependencies for the blank sample app.
+      ContentUri: lib_zip/python.zip
+      CompatibleRuntimes:
+        - python3.7
+        - python3.6
+
+Outputs:
+  HelloWorldApi:
+    Description: API Gateway endpoint URL for Prod stage for Hello World function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/
+  Spider2Function:
+    Description: Hello World Lambda Function ARN
+    Value:
+      Fn::GetAtt:
+      - Spider2Function
+      - Arn
+  Spider2FunctionIamRole:
+    Description: Implicit IAM Role created for Hello World function
+    Value:
+      Fn::GetAtt:
+      - Spider2FunctionRole
+      - Arn
