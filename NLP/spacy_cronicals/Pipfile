@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 jupyterlab = "*"
 spacy = "*"
+pandas = "*"
+wordcloud = "*"
 
 [requires]
 python_version = "3.7"

@@ -1,0 +1,38 @@
+# Learn more:
+# https://www.youtube.com/watch?v=kJph4q0Im98
+
+
+# Query with WikiMedia
+# ====================
+# https://www.wikidata.org/w/api.php?action=wbsearchentities&search=Zlatan%20Ibrahimovi%C4%87&language=en
+
+
+# Query with SPARQL
+# =================
+
+SELECT distinct ?item ?itemLabel ?itemDescription WHERE{
+  ?item ?label "Pfizer"@en.
+  ?article schema:about ?item .
+  ?article schema:inLanguage "en" .
+  ?article schema:isPartOf <https://en.wikipedia.org/>.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
+
+
+# Search by Label in wikidata
+# Try this:
+# https://w.wiki/z9F
+SELECT distinct ?item ?itemLabel ?itemDescription WHERE{
+
+  {?item ?label "Stockholm"@en .}
+  UNION
+  {?item ?label "Stockholm"@sv .}
+  ?article schema:about ?item .
+  {?article schema:inLanguage "en" .}
+  UNION
+  {?article schema:inLanguage "sv" .}
+  {?article schema:isPartOf <https://en.wikipedia.org/> . }
+  UNION
+  {?article schema:isPartOf <https://sv.wikipedia.org/> . }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+}
