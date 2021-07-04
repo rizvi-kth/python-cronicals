@@ -1,0 +1,35 @@
+cmd + 1 = Project Window
+cmd + 2 = Ipython
+cmd + 6 = Todo list
+cmd + 8 = Commit window
+cmd + 9 = VCS
+cmd + , = Preference window
+
+Alt + F12 = Terminal
+
+Shift + F6 = Rename file / Function name / Variable name
+ctrl + Tab = Switch window, Back to code from project window
+
+cmd + Shift + C = Copy file path
+cmd + Shift + F = Search string in project files / with masks
+cmd + Shift + R = Replace
+cmd + Shift + U = Toggle case
+
+
+Editor
+======
+cmd + D = Duplicate line
+cmd + shift + down = Drag the line down
+alt + up/down = Select the whole word, then statement
+
+cmd + B = Show usage / variable usage (green-read vs red-write)
+cmd + W = Close current editor tab
+cmd + ctrl + G = Select and Edit multi-line
+
+Alt + Enter = Popup actions / auto import / fix spelling
+Shift shift = Quick navigation in project files
+
+
+IPython
+=======
+Sft + Alt + E = Run selection on IPython Console
